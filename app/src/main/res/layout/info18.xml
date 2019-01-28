@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9DC" >
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#9e00ff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Betla National Park, Latehar"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000" />
+
+    </LinearLayout>
+
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout1" >
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/betla1" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/betla2" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/betla4" />
+
+    </ViewFlipper>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/viewFlipper1"
+        android:orientation="vertical" >
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.54"
+            android:text="Betla National Park is located in the Chota Nagpur Plateau in Latehar district and home to a wide variety of wild life.Protected area of Betla Park was one of the first wildlife parks to become a tiger reserve under Project Tiger in India.Betla National Park is a national park located in the Chota Nagpur Plateau of the Palamu district of the Indian state of Jharkhand, in India. The park boasts a wide variety of wild life.Initially comprising the 1,026 km2 of the Palamau Tiger Reserve, an additional 226 km2 was added to the park in 1989 and 63 km2 of the Mahuadar wolf sanctuary.[1][2] Betla was one of the first national parks in India to become a tiger reserve under Project Tiger. The park is under administration of the forest departments.Betla village (at 23.8878°N 84.190139°ECoordinates: 23.8878°N 84.190139°E) is the only entry point to the park. The village is situated 25 road-km south of Daltonganj, 65 road-km northwest of Latehar and 170 road-km northwest of Ranchi." />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Back" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Go To Map" />
+
+</RelativeLayout>

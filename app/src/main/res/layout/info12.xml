@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9DC" >
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#9e00ff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basukinath Temple, Deoghar"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000" />
+
+    </LinearLayout>
+
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout1" >
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/basukinath1" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/basukinath3" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/basukinath2" />
+
+    </ViewFlipper>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/viewFlipper1"
+        android:orientation="vertical" >
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.54"
+            android:text="Basukinath Temple is second famous temple of Lord Shiva in Deoghar and known for the mela of Shraavana, located en-route from Deoghar to Dumka.Baba Basukinath temples has started the festival called Ram Janki Vivah Utsav, the marriage of Ram and Sita.Basukinath is located in Dumka District of Jharkhand. It lies on the Deoghar – Dumka state highway and is around 25 km northwest of Dumka. It is a place of pilgrimage for Hindus. Basukinath Temple is the main attraction here.It is situated on Jasidih Dumka New Railway line and Basukinath Railway Station is the nearest railheads. Ranchi Airport is the nearest airport. It is situated at Jarmundi Block on Dumka Deoghar State Highway at a distance of 24 km from the District Headquarters Dumka. In a year lacs and lacs people from different parts of country come here to worship Lord Shiva." />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Back" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Go To Map" />
+
+</RelativeLayout>

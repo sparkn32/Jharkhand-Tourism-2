@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9DC" >
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#9e00ff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dewri Temple, Ranchi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000" />
+
+    </LinearLayout>
+
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout1" >
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/dewri1" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/dewri2" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/dewri3" />
+
+    </ViewFlipper>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/viewFlipper1"
+        android:orientation="vertical" >
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.54"
+            android:text="Dewri Temple of Ranchi is an ancient shrine dedicated to Goddess Kali, situated in Tamaar village.Dewri Mandir is one of the very old temple of Goddess Durga in India.Dewri Mandir is located in Tamar 60 km toward south from the capital of Jharkhand i.e. Ranchi. It is on the Tata-Ranchi Highway (NH33). It is a very old temple of Goddess Durga. The main attraction is that the idol is having 16 Hands (Normally Goddess Durga is having 8 Hands). The temple is very old and now renovation is going on. It is made up of big stone put one anover other without any cementing material in between. Dedicated to Solha Bhuji Goddess, an avatar of Goddess Durga, Dewri Mandir temple is located a little outside the main city of Ranchi. Spread over nearly two acres, this old temple in Ranchi also houses an idol of Lord Shiva here. Legend has it that whoever has tried to alter the structure of the temple has had to face the wrath of the gods and suffer consequences. Dewri Temple is also believed to be the only temple where six tribal priests, known as Pahans, perform rituals and offer prayers alongside the Brahmin priests. Located about 60 km from Ranchi, this temple is on the right side of the Ranchi-Tata road, toward the town of Tamar." />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Back" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Go To Map" />
+
+</RelativeLayout>
