@@ -20,13 +20,14 @@ public class Map1 extends Activity {
         getWindow().requestFeature(Window.FEATURE_PROGRESS);
         setContentView(R.layout.map);
 
-        wv=(WebView)findViewById(R.id.webView1);
+        wv=findViewById(R.id.webView1);
         wv.loadUrl("https://www.google.co.in/maps/place/Baba+Baidyanath+Temple/@24.4923092,86.698894,17z/data=!4m5!3m4!1s0x39f1162b1519c019:0xdb8ce9bf0b62d036!8m2!3d24.4924869!4d86.7000032");
         WebSettings ws=wv.getSettings();
         ws.setDefaultZoom(WebSettings.ZoomDensity.FAR);
         ws.setBuiltInZoomControls(true);
         ws.setJavaScriptEnabled(true);
         wv.setWebViewClient(new MyView());
+
     }
     class MyView extends WebViewClient{
         ProgressDialog pd=new ProgressDialog(Map1.this);
